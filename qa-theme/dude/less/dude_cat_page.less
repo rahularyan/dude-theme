@@ -1,0 +1,49 @@
+//
+// cat page
+// --------------------------------------------------
+.page-cat-list{
+	list-style:none;
+	margin:0;
+	padding:0;
+	border: 1px solid #ddd;	
+	
+	.ra-cat-item{
+		background: none repeat scroll 0 0 #FFFFFF;
+		border-top: 1px solid #eee;
+		padding: 5px 15px;
+						
+		&:first-child{
+			border-top: none;
+		}
+		.ra-cat-note{
+			color: #888888;
+			display: block;
+			font-size: 13px;
+			margin-bottom: 10px;
+		}
+		h4{
+			font-size: 15px;
+			font-weight: bold;
+			margin: 5px 0;
+			span{
+				background: @primaryColor;				
+				border-radius: 2px;
+				display: table;
+				float: right;
+				font-size: 11px;
+				font-weight: bold;
+				padding: 0 10px;
+				
+				a{
+					color:#fff;
+				}
+			}
+			.icon-star{
+				color: #FF702A;
+				display: block;
+				float: left;
+				margin-right: 10px;
+			}
+		}
+	}
+}

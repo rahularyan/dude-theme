@@ -1,0 +1,86 @@
+//
+// Answer form
+// --------------------------------------------------
+.answer-form{
+	.avatar{
+    margin-left: -70px;
+    margin-top: -16px;
+    position: relative;
+    z-index: 10;
+		.avatar-wrap{
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		.avatar-wrap:hover img {
+			background:#ddd;
+		}
+		img{
+			border-radius: 5px;
+			transition: all 0.3s ease 0s;
+		}
+		a{
+			text-align:center;
+			display:block;
+		}
+
+	}
+	.answer-form-right{
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 3px;
+		margin-left: 54px;
+		padding: 15px;
+	}
+	
+	
+	h2{
+		font-size: 18px;
+		line-height: 20px;
+		margin: 0 0 5px;
+		padding: 0;
+	}
+	form{
+		margin:0;
+	}
+	.form-horizontal .controls {
+		margin-left: 0;
+	}
+		.form-group{
+		margin:0;
+		
+		.col-lg-10{
+			float: left;
+			margin-top: 5px;
+			padding: 0;
+			width: auto;
+		}
+	}
+
+	textarea {
+		height: 100px;
+		margin-bottom: 10px;
+	}
+	.control-group{
+		background:transparent;
+		padding: 0;
+	}
+	.control-label {
+		color: #888888;
+		font-size: 13px;
+		font-weight: normal;
+		margin-right: 10px;
+		padding: 0;
+		text-align: left;
+		width: auto;
+	}
+	.form-actions{
+		background:transparent;
+		padding:0;
+		margin:0;
+		border-top: medium none;
+	}
+	
+	&.answer-closed p{
+		margin:0;
+	}
+}

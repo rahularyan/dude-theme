@@ -1,0 +1,64 @@
+/*
+	RA Social
+	Author: Rahul Aryan
+	Website: http://www.rahularyan.com
+	Licence: GPLv3
+*/
+.ra-social-list{
+	padding: 5px 0;
+}
+.ra-social-list .link{
+	width:250px;
+}
+.ra-social-list select{
+	padding: 4px;
+}
+.ra-social-add{
+	background: url("add.png") no-repeat;
+	display:block;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+}
+.ra-social-delete{
+	background: url("delete.png") no-repeat;
+	display: inline-block;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+}
+.ra-social-output ul{
+	list-style:none;
+	margin:0;
+}
+.ra-social-output ul.inline li{
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+	float:left;
+}
+.ra-social-output ul li a{
+	display:block;
+}
+.ra-social-output .inline a span{
+	display:none;
+}
+
+.ra-social-output a img{
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+		transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+
+.ra-social-output a:hover img{
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	-o-border-radius:50%;
+}

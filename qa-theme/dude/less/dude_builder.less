@@ -1,0 +1,285 @@
+
+// builder elements and controls
+
+[contenteditable="true"]{
+	background:#c8ebfb;
+	border:dotted 1px #ddd;
+}
+
+.config{
+	display:none;
+}
+.ra-container{
+	margin-bottom:30px;
+}
+
+.builder-elem {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+    left: 0;
+    margin-top: 45px;
+    position: fixed;
+    top: 0;
+    transition: all 500ms ease 0s;
+    width: 190px;
+    z-index: 10;
+
+	.buttons {
+		background-image: linear-gradient(#FFFFFF, #EEEEEE);
+		border-bottom: 1px solid #CCCCCC;
+		padding: 5px;
+		position: relative;
+		.btn{
+			height: 24px;
+			line-height: 22px;
+			padding: 1px 5px;
+		}
+	}
+	
+	.css-choose-block{
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius:3px;
+		box-shadow: 0 0 5px #DDDDDD;
+		display: none;
+		padding: 6px;
+		position: absolute;
+		right: 10px;
+		top: 35px;
+		z-index: 9;
+		
+		a{
+			display:block;
+		}
+	}
+	
+	&.setting .element-container, .config, .open-html-modal, .tab-add, .tab-remove{
+		display:none;
+	}
+	.element-container{
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding: 10px 10px 0;
+	}
+	.accordion-group { border:none;padding: 0;margin-bottom: 5px;}
+
+	.options{
+		.field{
+			padding: 3px;
+			&.checkbox input{
+				margin: 0 5px 0 0;
+				padding: 0;
+			}
+			label{
+				font-size:12px;
+				line-height: 14px;
+			}
+		}
+	}
+	.rows{
+		display:none;
+	}
+	.nav-header {
+		#gradient .vertical( #fff, #eee);
+		border: 1px solid #fff;
+		border-radius:3px;
+		.box-shadow(0 0 1px rgba(0, 0, 0, 0.1));
+		color: #888;
+		cursor: pointer;
+		font-size: 12px;
+		font-weight: bold;
+		margin: 0;
+		padding: 5px;
+		text-shadow: 1px 1px 1px #FFFFFF;
+		text-transform: capitalize;
+		i{
+			margin: 0 5px;
+		}
+	}
+
+	.item-content, .widget-title{
+		display:none;
+	}
+	ul{
+		margin:0;
+	}
+	
+	li{
+		line-height: 25px;
+		padding: 5px;
+		
+		.item{
+			background: none repeat scroll 0 0 #FFFFFF;
+			border-radius: 3px;
+			height: 30px;
+			margin-bottom: 5px;
+		}
+		
+		> div{	
+			padding: 5px 5px 5px 10px;
+		}
+		&:nth-child(2){
+			background: none repeat scroll 0 0 #EEEEEE;
+			border: 1px solid #FFFFFF;
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+			font-weight: bold;
+		}
+		.ra-row{
+			padding: 4px 0;
+			
+			.item-title{
+				padding:5px 10px;
+			}
+		}
+		.config{
+			display:table;
+			.opacity(100);
+			float:right;
+
+		}
+
+		.tools.drag{
+			.opacity(100);
+			display:inline-block;
+			padding: 0;
+		}
+		.drag { 
+			background: none repeat scroll 0 0 #EEEEEE;
+			color: #AAAAAA;
+			cursor: move;
+			line-height: 18px;
+			vertical-align: text-bottom;
+			width: 20px;
+		}
+		.remove, .param, .param-field{
+			display:none;
+		}
+		.ra-row .item-title {
+			white-space: normal;
+		}
+		.item-title { 
+			display: block; 
+			color:#888; 
+			font-size:12px; 
+			line-height:22px;
+			white-space: nowrap;			
+		}
+		.item-title input { 
+			border: 1px solid #ddd;
+			color: #888888;
+			font-size: 10px;
+			height: 20px;
+			line-height: 20px;
+			margin: 0;
+			padding: 0 10px;
+			position: relative;
+			width: 90px;
+		}
+		select.ra-contain{
+			border: 1px solid #ddd;
+			color: #999999;
+			font-size: 11px;
+			height: auto;
+			margin-top: 10px;
+			padding: 3px;
+			width: 113px;
+		}		
+	}
+}
+.edit-canvas.edit-mode{
+	.item-title{
+		display:none;
+	}
+	.item-content .column{
+		min-height: 100px;
+		border: 1px dotted #CCCCCC;
+	}
+	
+	.ra-row, .item {
+		position: relative;
+	}
+	.config {
+		position: absolute;
+		right: 0;
+		top: 0;
+		display:none;
+		z-index:9;
+	}
+	.ra-row:hover > .config, .item:hover .config{
+		display:block;
+	}
+	.placeholder{
+		background:#fed856;
+	}
+	.config .tools{
+		font-size:14px;
+	}
+	.param-field{
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		display: none;
+		padding: 5px;
+		position: absolute;
+		width: 100px;
+		z-index: 99;
+		right: 3px;
+		top: 37px;
+		
+		.param-wrap{
+			position:relative;
+			
+			&:before{
+				border-color: transparent transparent #DDDDDD;
+				border-style: solid;
+				border-width: 10px;
+				content: "";
+				position: absolute;
+				right: 0;
+				top: -25px;
+			}			
+			&:after{
+				border-color: transparent transparent #fff;
+				border-style: solid;
+				border-width: 10px;
+				content: "";
+				position: absolute;
+				right: 0;
+				top: -23px;
+			}
+		}
+		
+		input{
+			width: 48px;
+			vertical-align:text-bottom;
+			margin:0;
+		}
+		button{
+			vertical-align:text-bottom;
+			margin:0;
+		}
+	}
+	button.tools, span.tools{
+		margin-right:5px;
+	}
+}
+.modal{
+	.css-editor{
+		width:97%;
+		height:100%;
+		min-height: 200px;
+	}
+	.alert{
+		display:none;
+	}
+}
+#builder_qa .widget-c.ads-c {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    min-height: 50px;
+    text-align: center;
+}

@@ -1,0 +1,1 @@
+<div class="ra-row parent ui-draggable">  <div class="item-content"> <div class="ra-container"><div class="container"><div class="row"><div class="col-md-12 column ui-sortable"><div class="item parent ui-draggable">  <div data-type="ra_widget" data-name="Main Parts" class="item-content widget-c">[ra_widget name="Main Parts" ]</div> </div></div></div></div></div> </div> </div>

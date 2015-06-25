@@ -1,0 +1,71 @@
+//
+// Mastheader
+// --------------------------------------------------
+
+
+.page-header {
+    background: @hero-bg;
+    border-bottom: medium none;
+    margin: 0 0 20px;
+    padding: 10px;
+}
+#main {
+	&.has-fixed-top{
+		margin-top: 44px;	
+	}
+	
+	.page-header{
+		h1{
+			color: #FFFFFF;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 36px;
+			margin: 3px;
+		}
+		.fav-parent {
+			float: right;
+			margin-right: 10px;
+			margin-top: 12px;
+		}
+	}
+	.social-links{
+		margin: 13px 0 0;
+		li{
+			display: block;
+			float: left;
+			margin-right: 10px;
+		}
+		a{
+			background:@primaryColor;
+			border: 1px solid rgba(0, 0, 0, 0.07);
+			border-radius:50%;
+			color: #FFFFFF;
+			font-size: 15px;
+			height: 26px;
+			line-height: 28px;
+			text-align: center;
+			width: 26px;
+			.transition(all 0.5s ease 0s);
+		}
+		li a:hover{
+			background:#ddd;
+		}
+	}
+	.search-form {
+		margin: 12px 0 0;
+		input{
+			margin:0;
+		}
+		input[type="text"]{
+			border: medium none;
+			margin-right: 5px;
+		}
+		button.icon-magnifier {
+			color: #FFFFFF;
+			font-size: 17px;
+			line-height: 20px;
+			padding: 2px 6px;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,149 @@
+//
+// Comments
+// --------------------------------------------------
+
+.comments{
+.qa-q-view-c-list,.qa-a-item-c-list{
+    border-top: 1px solid #eee;    
+	position:relative;
+}
+	.comment,.link-to {
+		border-bottom: 1px solid #EEEEEE;
+		color: #777777;
+		padding: 10px 8px;
+	}	
+	.post-meta {
+		padding: 0;
+	}
+	form{
+			margin:0;
+	}
+	.comment:last-child {
+		border: medium none;
+		margin-bottom: 0;
+	}
+	.comment-item{	
+		position:relative;
+		
+		&:nth-child(2n+1) {
+			background: none repeat scroll 0 0 #F5F5F5;
+		}
+		.avatar{
+			margin-right:15px;
+			margin-top: 6px;
+			img{
+				border-radius:2px;
+				padding: 0;
+			}
+		}
+		.entry-content{
+			font-size: 11px;
+			line-height: 19px;
+			padding: 0;
+		}
+		.comment-title{
+			font-size: 13px;
+			font-weight: bold;
+			margin: 0 0 5px;
+		}
+		.content{
+			font-size: 13px;			
+			line-height: 22px;
+			overflow: hidden;
+			&.collapsible{
+				height: 40px;
+			}
+			.post-meta > div{
+			}
+		}
+		.qa-c-item-buttons {
+			float: right;
+		}
+		.form-actions{
+			background:  transparent;
+			border: medium none;
+			margin: 0;
+			padding: 0;
+			
+			.btn{
+				background: transparent;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				color: #777777;
+				font-size: 11px;
+				font-weight: bold;
+				height: auto;
+				padding: 1px 5px;
+			}
+		}
+		.show-full-comment{
+			background: none repeat scroll 0 0 #DDDDDD;
+			border-bottom: 2px solid #CCCCCC;
+			border-radius:2px;
+			color: #FFFFFF;
+			cursor: pointer;
+			display: block;
+			font-size: 12px;
+			line-height: 100%;
+			margin-left: 2px;
+			margin-top: 8px;
+			padding: 4px 6px;
+			
+			&:hover{
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+// comment form 
+.comment-form{
+    border-top: 1px solid #DDDDDD;
+	h2{
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 20px;
+		margin: 10px 0;
+		padding: 15px 15px 0;
+	}
+	form{
+		padding: 0 15px 15px;
+	}
+	.form-horizontal .controls{
+		margin: 0;
+	}
+	.form-group{
+		margin:0;
+		
+		.col-lg-10{
+			float: left;
+			margin-top: 5px;
+			padding: 0;
+			width: auto;
+		}
+	}
+	textarea {
+		height: 70px;
+	}
+	.form-horizontal .control-label{
+		font-weight: normal;
+		width: auto;
+	}
+	.control-group {
+		background: transparent;
+		margin-bottom: 0;
+		margin-top: 5px;
+		padding: 0;
+	}
+	.form-horizontal .controls input{
+		vertical-align:inherit;
+	}
+	form{
+		margin:0;
+	}
+	.form-actions{
+		margin:0;
+		padding:0;
+		background:transparent;
+		border-top:none;
+	}
+}

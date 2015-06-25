@@ -1,0 +1,496 @@
+#user{
+	.user-top {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) -moz-use-text-color;
+		border-image: none;
+		border-radius: 6px 6px 0 0;
+		border-style: solid solid none;
+		border-width: 1px 1px medium;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+		margin-bottom: 20px;
+		overflow: hidden;
+		position: relative;
+		
+		
+		.user-name{
+		    color: #333333;
+			font-weight: bold;
+			margin: 0;
+			span{
+				color: #777777;
+				display: block;
+				font-size: 11px;
+				font-weight: normal;
+			}
+		}
+		.avatar{
+			background:#FFFFFF;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+			height: 162px;
+			margin-right: 20px;
+			margin-top: -12px;
+			padding: 6px;
+			width: 162px;
+			img{
+				border-radius:5px;
+				padding: 0;
+				width: 150px;
+			}
+		}
+		.user-stat {
+			background:rgba(255, 255, 255, 0.9);
+			border-radius: 4px;
+			box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+			margin-right: 10px;
+			margin-top: -50px;
+			
+			>ul{
+				padding:0;
+				margin:0;
+				list-style:none;
+				>li{
+					color: #333333;
+					display: block;
+					float: left;
+					font-weight: bold;
+					padding: 5px 10px;
+					
+					span{
+						color: #555555;
+						font-weight: normal;
+					}
+				}
+				
+				.points{
+					border-right: 1px solid rgba(0, 0, 0, 0.2);
+				}
+				.followers{
+					border-left: 1px solid rgba(255, 255, 255, 0.3);
+				}
+			}
+		}
+	}
+	.user-bar{
+		background: url("../images/profile-bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+		height: 300px;
+		padding: 200px 15px 15px;
+	}
+	.user-bar-holder{
+		height: 70px;
+		#gradient .vertical(#EEEEEE, #FFFFFF);
+		
+		.user-nag{
+			overflow:hidden;
+			h3{
+				margin:0;
+			}
+			.user-buttons{
+				margin: 21px 10px 10px;
+				
+				>*{
+				    float: right;
+					margin-left: 10px;
+				}
+				.btn:before{
+					padding-right:10px;
+				}
+				.fav-btn{
+					border-radius: 4px;
+					font-size: 12px;
+					font-weight: bold;
+					height: auto;
+					padding: 5px 10px;
+					width: auto;
+					
+
+					span{
+						display: inline-block;
+					}
+				}
+			}
+			
+		}
+	}
+	
+	.user-page-menu{
+		background: none repeat scroll 0 0 #333333;
+		border: 1px solid rgba(0, 0, 0, 0.5);
+		border-radius: 3px;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		
+		li{
+			margin-bottom: 0;
+			a{
+			    color: #ddd;
+				font-weight: bold;
+				font-size: 12px;
+			}
+			a:hover {
+				background: none repeat scroll 0 0 #222222;
+				border: solid 1px transparent;				
+			}
+		}
+		.edit-profile-link a{
+			border-radius: 2px;
+			color: #FFFFFF;
+			margin: 9px;
+			padding: 0 8px;
+			
+			&:hover{
+				background:#aaa;
+			}
+		}
+	}
+	.user-profile-fields{
+		ul{
+
+		}
+	}
+	.profile-label{
+		color: #AAAAAA;
+		font-weight: bold;
+		margin-right: 7px;
+	}
+	
+	.profile-activity{
+		li{
+		
+			&:before {
+				background:#CCCCCC;
+				border-radius: 2px;
+				color: rgba(255, 255, 255, 0.8);
+				display: block;
+				float: left;
+				font-size: 15px;
+				height: 23px;
+				line-height: 17px;
+				margin-right: 10px;
+				padding: 2px;
+				text-align: center;
+				width: 23px;
+			}
+		}
+		li.icon-radio-checked:before{
+			background:#73b8ff;
+		}
+		li.icon-question:before{
+			background:#fd9a25;
+		}
+		li.icon-chat-3:before{
+			background:#5ec057;
+		}
+		li.icon-comments:before{
+			background:#DFA37E;
+		}
+		li.icon-vote:before{
+			background:#ff594c;
+		}
+		li.icon-forward:before{
+			background:#0dd4ff;
+		}
+		li.icon-reply:before{
+			background:#c14d6b;
+		}
+		li.icon-box-2:before{
+			background:#55aac3;
+		}
+	}
+	.user-followers{
+		background:#FFFFFF;
+		list-style: none outside none;
+		margin: 0;
+		padding: 10px;
+		
+		li{
+			float: left;
+			padding: 6px;
+			.avatar{
+				position:relative;
+			}
+			img{
+				border-radius:3px;
+			}
+		}
+	}
+	.show-priv{
+		color:@primaryColor;
+		cursor:pointer;
+	}
+	.all-priv{
+		display:none;
+	}
+	
+	.bonus-points{
+		background:#FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 5px;
+		margin-top: 30px;
+		padding: 15px;
+		margin-bottom: 30px;
+		
+		.col-lg-10{
+			width:175px;
+		}
+		.form-group{
+			float: left;
+			margin-right: 2px;
+			
+			.control-label{
+				width:125px;
+			}
+		}
+	}
+	.edit-user{
+		background:#fff;
+		padding:15px;
+		border:solid 1px #ddd;
+	}
+	.block-user{
+		background:#FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 3px;
+		margin-top: 30px;
+		padding: 10px;
+		
+		.btn{
+			float: left;
+			font-size: 12px;
+			margin-bottom: 0;
+			margin-right: 8px;
+			padding: 5px 10px;
+			width: auto;
+		}
+	}
+	.user-badges-user{
+		padding:10px;
+		background:#fff;
+		
+		.user-badge{
+			padding:0;
+			margin:0;
+			list-style:none;
+			
+			li{
+				float:left;
+			}
+		}
+	}
+	#upload-cover{
+		margin: 10px;
+		padding: 1px 5px;
+		position: absolute;
+		right: 0;
+	}
+	.about .list-group-item{
+		border:none;
+	}
+	.activity{
+		ul{
+			padding:10px;
+		}
+		.list-group-item{
+			border-color:#eee;
+		}
+	}
+	.profile{
+		background:#FEFDEB;
+		border: 2px solid #E5E4C5;
+		ul{
+			padding:10px;
+			
+			li{
+				background:rgba(0, 0, 0, 0);
+				border-color: rgba(0, 0, 0, 0.05);
+			}
+		}
+	}
+}
+
+.message-list-form{
+	background:#FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	margin-bottom: 25px;
+	padding: 10px;
+	
+	.btn{
+		.button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+	}
+}
+.message-item{
+	margin-bottom: 25px;
+	margin-left: 40px;
+	position:relative;
+	
+	&:last-child:before{
+		display:none;
+	}
+	&:before {
+		background:#FFFFFF;
+		border-radius: 2px;
+		bottom: -30px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+		content: "";
+		height: 100%;
+		left: -30px;
+		position: absolute;
+		width: 3px;
+	}
+	&:after {
+		background:#FFFFFF;
+		border: 2px solid #CCCCCC;
+		border-radius: 50%;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		content: "";
+		height: 15px;
+		left: -36px;
+		position: absolute;
+		top: 10px;
+		width: 15px;
+	}
+
+	.message-inner{
+		background:#FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 3px;
+		padding: 10px;
+		position:relative;
+		
+		&:before{
+			border-right: 10px solid #ddd;
+			border-style: solid;
+			border-width: 10px;
+			color: rgba(0, 0, 0, 0);
+			content: "";
+			display: block;
+			height: 0;
+			position: absolute;
+			left: -20px;
+			top: 6px;
+			width: 0;
+		}
+		&:after{
+			border-right: 10px solid #FFFFFF;
+			border-style: solid;
+			border-width: 10px;
+			color: rgba(0, 0, 0, 0);
+			content: "";
+			display: block;
+			height: 0;
+			position: absolute;
+			left: -18px;
+			top: 6px;
+			width: 0;
+		}
+	}
+	.message-head{
+		border-bottom: 1px solid #EEEEEE;
+		margin-bottom: 8px;
+		padding-bottom: 8px;
+		.post-meta {
+			float:left;
+			padding: 0 15px 0 0;
+			>div{
+				color: #333333;
+				font-weight: bold;
+				text-align: right;
+			}
+			a{
+				color:@primaryColor;
+			}
+		}
+		.avatar{
+			margin-right:20px;
+		}
+		.user-detail{
+			overflow:hidden;
+			
+			h5{
+				font-size: 16px;
+				font-weight: bold;
+				margin: 0;
+			}
+		}
+		.qa-message-buttons{
+			float:right;
+			.btn{
+				.button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+				.button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+				padding: 1px 5px;
+			}
+		}
+		
+	}
+}
+
+.badge-user-block{
+	.widget-inner{
+		padding:10px;
+		position:relative;
+	}
+	.badge-container-badge {
+		display: inline-block;
+		margin-bottom: 6px;
+		margin-right: 10px;
+		white-space: nowrap;
+	}
+	.user-badge{
+		border-radius: 2px;
+		color: #FFFFFF;
+		line-height: 30px;
+		padding: 4px 6px;
+		
+		&.bronze{
+			background:#c34c1e;
+		}	
+		&.silver{
+			background:#C0C0C0;
+		}	
+		&.gold{
+			background:#ff9806;
+		}
+	}
+	.badge-count{
+		font-weight:normal;
+		color: #777;
+		&.badge-count-link{
+			color: #777;
+		}
+	}
+	.badge-sources {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 3px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		padding: 10px;
+		position: absolute;
+		display: none;
+		ul{
+			list-style: none outside none;
+			margin: 0;
+			padding: 0;
+			
+			li{
+				border-bottom: 1px solid #DDDDDD;
+				padding: 5px 10px;
+			}			
+		}
+	}
+	.icon-chevron-down{
+		background: #aaa;
+		border-radius: 2px;
+		color: #FFFFFF;
+		cursor: pointer;
+		font-size: 10px;
+		margin-left: 3px;
+		padding: 2px 3px;
+	}
+}
+.user-edit > .container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}

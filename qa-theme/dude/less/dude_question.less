@@ -1,0 +1,224 @@
+//
+// Question
+// --------------------------------------------------
+
+
+.question{
+	.q-right{		
+		background:#FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius:2px;
+		margin-left: 20px;
+		margin-top: 20px;
+		padding: 10px;
+		position: relative;
+		> div{
+			display: block;
+			float: left;
+			margin-right: 10px;
+			vertical-align: inherit;
+		}
+		> div:last-child{
+			margin-right:0;
+		}
+		> div:hover{
+			.box-shadow(0 0 5px #ccc);
+		}
+		.voting {
+
+		}
+		.views:before{
+			color: #333333;
+			display: block;
+			float: left;
+			font-size: 16px;
+			line-height: 20px;
+			margin-right: 3px;
+			margin-top: 0;
+		}
+		.views{
+			border: 1px solid #DDDDDD;
+			border-radius:2px;
+			font-size: 15px;
+			height: 20px;
+			line-height: 21px;
+			padding: 0 5px;
+		}
+	}	
+	
+	.q-left{
+		overflow: hidden;
+	}
+	.q-title{
+		font-family:@q-list-ff;
+		font-size: 26px;
+		font-weight: bold;
+		margin: 0;
+		padding-top: 0;
+		a{
+			color: #333333;
+		}
+	}
+	.post-meta-q{
+		font-size: 13px;
+		margin: 10px 0;
+		
+		dt{
+			border-left: 1px solid #DDDDDD;
+			color: #777777;
+			display: block;
+			float: left;
+			font-weight: normal;
+			line-height: 15px;
+			margin: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			
+			a{
+
+			}
+			&:before {
+				padding-right: 5px;
+			}
+			
+		}
+		dt:first-child{
+			border:none;
+			padding-left: 0;
+		}
+		dt .post-status {
+			display: block;
+			line-height: 16px;
+			padding: 0 10px;
+		}
+	}
+	&.qa-q-view .avatar{
+		margin-right: 15px;
+		position:relative;
+		.avatar-wrap{			
+			border-radius: 2px;
+			overflow: hidden;
+			
+			&:hover img{
+				background:#ddd;
+			}
+		}
+		img{
+			border-radius:1px;			
+			transition:0.3s all;
+		}
+		a{
+		    display: block;
+			text-align: center;
+		}
+	}
+	.fav-parent {
+		margin-top: 3px;
+		
+		.fav-btn {
+			background: @primaryColor;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 50%;
+			color: #FFFFFF;
+			display: block;
+			font-size: 18px;
+			height: 30px;
+			margin: 0 auto;
+			padding: 0;
+			text-align: center;
+			transition: all 0.1s ease 0s;
+			width: 30px;
+		}
+	}
+	.q-head{
+	    border-bottom: 1px solid #DDDDDD;
+		padding: 0 13px;
+		.q-head-inner{
+			overflow:hidden;
+		}
+		.avatar.pull-left {
+			margin-top: 11px;
+		}
+	}
+	.q-outer-right{
+		overflow: hidden;
+		margin-left:50px;
+	}
+	.question-content{
+		background:#FFFFFF;
+		border: 1px solid #DDDDDD;
+		border-radius: 3px;		
+		position: relative;
+		
+		.entry-content{
+			color: #6E6E6E;
+			font-size: 14px;
+			line-height: 26px;
+			padding: 15px;
+		}
+	}
+	.post-q-fav-vote{
+		margin-bottom: 15px;
+		>div{
+			display: block;
+			float: right;
+			margin-left: 10px;
+		}
+		.fav-btn{
+			height: 25px;
+			line-height: 23px;
+			padding: 1px 5px;
+		}
+	}
+	.qa-q-view-tag-list{
+		padding:0;
+		float:right;
+		.qa-q-view-tags {
+			clear: both;
+			margin-bottom: 12px;
+			margin-top: 10px;
+			padding: 0 15px;
+		}
+	}
+	.q-buttons{
+		#gradient .linear(#F5F5F5, #F9F9F9);
+		border-bottom: 2px solid #DDDDDD;
+		border-top: 1px solid #EEEEEE;
+		margin-top: 5px;
+		padding: 10px 15px;
+		position: relative;
+		form{
+			margin:0;
+		}
+		.form-actions{
+			background:  transparent;
+			border: medium none;
+			margin: 0;
+			padding: 0;
+		}
+		.btn{
+			.button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+		}		
+	}
+	
+}
+.vote-float{
+	position:relative;
+}
+.vote-c{
+	border-radius: 4px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	position: absolute;
+	top:0;
+	
+	.voting {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #DDDDDD;
+		height: 60px;
+		position: relative;
+		width: 35px;
+	}
+}
+

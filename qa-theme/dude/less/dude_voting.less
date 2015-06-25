@@ -1,0 +1,142 @@
+//
+// voting button
+// --------------------------------------------------
+
+
+.voting{
+    position: relative;
+	width: 41px;
+
+	a.vote-up, a.vote-down{
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		font-size: 20px;
+	}
+	a.vote-up{		
+		color:@vote-positive-bg;
+		top:0;
+	}
+	a.vote-down{	
+		color:@vote-negative-bg;
+		top: 32px;
+	}
+	.count {
+		font-size: 13px;
+		font-weight: bold;
+		position: absolute;
+		text-align: center;
+		top: 19px;
+		width: 100%;
+		
+		span {
+			display:none;
+		}
+	}
+	.vote-up.voted_up{
+		color:@vote-positive-bg;
+	}
+	.vote-down.voted_down{
+		color:#e52121;
+	}
+	.vote-down.voted_up, .vote-up.voted_down, .vote-up.disabled, .vote-down.disabled, .voted_up_disabled, .vote-down.up_only {
+		color: #DDDDDD !important;
+		cursor: default;
+	}
+	a,span {
+		display: block;
+		float: left;
+		line-height: 20px;
+	}
+}
+.list-voting{
+    background: @vote-default-bg;
+	color:#fff;
+    border-radius: 2px;
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 40px;
+	padding-top: 2px;
+	
+	&.voted_down{
+		background:@vote-negative-bg;
+		
+		a,.count{
+			color:#fff;
+		}
+		.vote-up ,.vote-down {
+			color:#fff;
+		}
+	}
+	&.voted_up{
+		background:@vote-positive-bg;
+		a,.count{
+			color:#fff;
+		}
+		.vote-up ,.vote-down {
+			color:#fff;
+		}
+	}
+	&.positive{
+		background:@vote-positive-bg;
+		color:#fff;
+	}
+	
+	&.negative{
+		background:@vote-negative-bg;
+		color:#fff;
+	}
+	&:hover{
+		.transition(all 1s);
+		>.count{
+			display:none;
+		}
+		>a{
+			display:block;
+		}
+	}
+	&.disabled:hover{
+		.transition(all 1s);
+		>.count{
+			display:block;
+		}
+		>a{
+			display:none;
+		}
+	}
+	a.vote-up{
+		color:#fff;
+	}	
+	a.vote-down{
+		color:#fff;
+	}
+	> .count {
+		color: #fff;
+		display: block;
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 0;
+		padding: 0;
+		text-align: center;
+		
+		span {
+			display: block;
+		}
+	}
+	> a{
+		display: none;
+		font-size: 20px;
+		height: 20px;
+		line-height: 100%;
+		margin-left: 2px;
+		margin-top: -3px;
+		text-align: center;
+		color:#aaa;
+	}
+	
+	.disabled, .vote-down.voted_up, .vote-up.voted_down{
+		color:rgba(0,0,0,0.1);
+	}
+}
